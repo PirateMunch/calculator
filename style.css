@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(128, 26, 0), orange);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.container {
+    border: 4px solid black;
+    border-radius: 10%;
+    padding: 2.5vw;
+    background-color: rgb(9, 158, 29);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+    max-width: 100%;
+    width: 50vw;
+}
+
+.container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 10%;
+}
+
+.container > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+#eggBtn {
+    background-color: black;
+    display: grid;
+    grid-column: span 2;
+    height: 3vw;
+    grid-column: 1 / 0;
+    border-radius: 10%;
+    border: 0;
+    margin-top: 2vw;
+    font-size: 0;
+    }
+
+.spacer {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.outsize {
+    grid-column: 1 / -1;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(187, 65, 65);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 2vw;
+    border-radius: 10%;
+    margin-top: 1vw;
+    gap: 1vw;
+}
+
+.output .previousOutput {
+    color: aqua;
+    font-size: 3vw;
+}
+
+.output .currentOutput {
+    color: white;
+    font-size: 5vw;
+}
