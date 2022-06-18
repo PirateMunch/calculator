@@ -37,6 +37,8 @@ html, body {
         height:auto;
         min-height: 100vh;
         background: linear-gradient(to right, rgb(128, 26, 0), orange);
+        max-width: 100%;
+        width: 100%;
       }
   
     }
@@ -103,14 +105,14 @@ main{
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgb(187, 65, 65);
+    background-color: rgb(236, 62, 62);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
     word-wrap: break-word;
     word-break: break-all;
-    padding: 2vw;
+    padding: 6vw;
     border-radius: 10%;
     margin-top: 1vw;
     gap: 1vw;
