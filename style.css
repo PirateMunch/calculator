@@ -2,13 +2,44 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-}
+} 
 
-body {
-    padding: 0;
+html, body {
+    height:auto!important;
+    min-height:100vh;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: linear-gradient(to right, rgb(128, 26, 0), orange);
-}
+  }
+  
+    @media only screen and (max-width: 800px) {
+      html {
+        background: linear-gradient(to right, rgb(128, 26, 0), orange);
+        min-height:100%;
+        max-width: 100%;
+      }
+    }
+  
+    @media only screen and (max-width: 550px) {
+      html {
+        height:auto;
+        min-height: 100vh;
+        background: linear-gradient(to right, rgb(128, 26, 0), orange);
+      }
+    }
+  
+    @media only screen and (max-width: 450px) {
+      html {
+        height:auto;
+        min-height: 100vh;
+        background: linear-gradient(to right, rgb(128, 26, 0), orange);
+      }
+  
+    }
 
 main{
     display: flex;
@@ -17,21 +48,17 @@ main{
     min-height: 100vh;
     justify-content: center;
     align-content: center;
-
+    margin: 5vw;
 }
 
 .container {
-    border: 4px solid black;
-    border-radius: 10%;
-    padding: 2.5vw;
-    background-color: rgb(9, 158, 29);
     display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(6, 100px);
     max-width: 100%;
-    width: 50vw;
+    
 }
 
 .container > button {
@@ -55,7 +82,7 @@ main{
     background-color: black;
     display: grid;
     grid-column: span 2;
-    height: 3vw;
+    height: 6vw;
     grid-column: 1 / 0;
     border-radius: 10%;
     border: 0;
@@ -87,15 +114,15 @@ main{
     border-radius: 10%;
     margin-top: 1vw;
     gap: 1vw;
-    height: 20vw;
+    height: 40vw;
 }
 
 .output .previousOutput {
     color: aqua;
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 .output .currentOutput {
     color: white;
-    font-size: 5vw;
+    font-size: 8vw;
 }

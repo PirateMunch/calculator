@@ -3,6 +3,7 @@ const numberButtons = document.querySelectorAll('[data-number]');
 const operatorButtons = document.querySelectorAll('[data-operation]');
 const equalsButton = document.querySelector('[data-equal]');
 const clearButton = document.querySelector('[data-clear]');
+const eggButton = document.querySelector('[data-egg]');
 const deleteButton = document.querySelector('[data-delete]');
 const prevOperationScreen = document.querySelector('[data-prevOperationScreen]');
 const currentOperationScreen = document.querySelector('[data-currentOperationScreen]');
@@ -21,6 +22,13 @@ class Calculator {
     this.currentOperand = ''
     this.previousOperand = ''
     this.operation = undefined
+  }
+
+  egg() {
+    this.currentOperand = '8008135!'
+    this.previousOperand = 'boobies!'
+    this.operation = undefined
+    this.updateDisplay()
   }
 
   /*delete function to delete last digit*/
@@ -110,6 +118,10 @@ class Calculator {
 clearButton.addEventListener('click', button => {
   calculator.clear()
   calculator.updateDisplay()
+})
+
+eggButton.addEventListener('click', button => {
+  calculator.egg()
 })
 
 deleteButton.addEventListener('click', button => {
