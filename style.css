@@ -47,7 +47,11 @@ main{
     background-color: rgba(255, 255, 255, .9);
 }
 
-#eggBtn {
+.bigBtn {
+    grid-column: span 2;
+}
+
+#egg {
     background-color: black;
     display: grid;
     grid-column: span 2;
@@ -83,6 +87,7 @@ main{
     border-radius: 10%;
     margin-top: 1vw;
     gap: 1vw;
+    height: 20vw;
 }
 
 .output .previousOutput {
